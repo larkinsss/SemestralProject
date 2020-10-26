@@ -1,0 +1,50 @@
+.text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text.nadpis{
+    font-size: 36px !important;
+}
+
+.homepage {
+    justify-content: center;
+}
+
+.blockquote {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.carousel-caption {
+    color: black;
+    font-weight: 1000;
+}
+
+.picsum-img-wrapper{
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+.carousel {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .carousel {
+        display: flex;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .carousel-caption {
+        color:dimgray;
+        font-size: small !important;
+    }
+}

@@ -2,6 +2,9 @@ import { AppComponent } from './app.component';
 import { WaitingListComponent } from './waiting-list/waiting-list/waiting-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home/home.component';
+import { AppointmentComponent } from './appointment/appointment/appointment.component';
+import { AmbulanceComponent } from './ambulance/ambulance/ambulance.component';
 
 const routes: Routes = [
   {
@@ -9,10 +12,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
-  { path: 'home', component: AppComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'waiting-list', component: WaitingListComponent },
-  // { path: 'waiting-list', component: WaitingListComponent },
-  // { path: 'waiting-list', component: WaitingListComponent }
+  { path: 'appointment', component: AppointmentComponent },
+  { path: 'ambulance', component: AmbulanceComponent }
 ];
 
 @NgModule({

@@ -15,6 +15,13 @@ import { WaitingListComponent } from './waiting-list/waiting-list/waiting-list.c
 import { HomeComponent } from './home/home/home.component';
 import { AmbulanceComponent } from './ambulance/ambulance/ambulance.component';
 import { AppointmentComponent } from './appointment/appointment/appointment.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +41,12 @@ import { AppointmentComponent } from './appointment/appointment/appointment.comp
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
