@@ -20,7 +20,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-
+import { WaitingListEntryComponent } from './waiting-list-entry/waiting-list-entry/waiting-list-entry.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     WaitingListComponent,
     HomeComponent,
     AmbulanceComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    WaitingListEntryComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatSelectModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
