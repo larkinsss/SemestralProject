@@ -5,9 +5,9 @@
     <mat-icon class="appIcon">medical_services</mat-icon>
     <div fxShow="true" fxHide.lt-sm>
         <a mat-button class="navButton" [routerLink] = "['home']" routerLinkActive="active-link">Home</a>
-        <a mat-button class="navButton" [routerLink] = "['waiting-list']" routerLinkActive="active-link">Ambulance</a>
         <a mat-button class="navButton" [routerLink] = "['waiting-list']" routerLinkActive="active-link">Waiting List</a>
-        <a mat-button class="navButton" [routerLink] = "['waiting-list']" routerLinkActive="active-link" >Appointment</a>
+        <a mat-button class="navButton" [routerLink] = "['appointment']" routerLinkActive="active-link" >Appointment</a>
+        <a mat-button class="navButton" [routerLink] = "['ambulance']" routerLinkActive="active-link">Kontakt</a>
     </div>
 
 
@@ -17,14 +17,23 @@
 <mat-sidenav-container fxFlexFill style="background-color: white;">
     <mat-sidenav #sidenav>
       <mat-nav-list>
-        <a mat-button class="navButton" (click)="sidenav.toggle()" fxShow="true" [routerLink] = "['home']" routerLinkActive="active-link">Home</a>
+        <div class="row">
+          <a mat-button class="navButton" (click)="sidenav.toggle()" fxShow="true" [routerLink] = "['home']" routerLinkActive="active-link">Home</a>
+          <br>
+        </div>
+        <div class="row">
+          <a mat-button class="navButton" (click)="sidenav.toggle()" fxShow="true" [routerLink] = "['waiting-list']" routerLinkActive="active-link">Waiting List</a>
         <br>
-        <a mat-button class="navButton" (click)="sidenav.toggle()" fxShow="true" [routerLink] = "['waiting-list']" routerLinkActive="active-link">Ambulance</a>
+        </div>
+        <div class="row">
+          <a mat-button class="navButton" (click)="sidenav.toggle()" fxShow="true" [routerLink] = "['appointment']" routerLinkActive="active-link" >Appointment</a>
         <br>
-        <a mat-button class="navButton" class="navButton" (click)="sidenav.toggle()" fxShow="true" [routerLink] = "['waiting-list']" routerLinkActive="active-link">Waiting List</a>
-        <br>
-        <a mat-button class="navButton" (click)="sidenav.toggle()" fxShow="true" [routerLink] = "['waiting-list']" routerLinkActive="active-link" >Appointment</a>
-                </mat-nav-list>
+        </div>
+        <div class="row">
+          <a mat-button class="navButton" (click)="sidenav.toggle()" fxShow="true" [routerLink] = "['ambulance']" routerLinkActive="active-link">Kontakt</a>
+        </div>
+        
+      </mat-nav-list>
     </mat-sidenav>
     <hr class = "separator">
     <div class="app-content" >
