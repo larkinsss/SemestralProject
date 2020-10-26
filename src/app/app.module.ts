@@ -22,6 +22,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { WaitingListEntryComponent } from './waiting-list-entry/waiting-list-entry/waiting-list-entry.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { FormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -49,7 +51,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatExpansionModule
+    MatExpansionModule,
+    FormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

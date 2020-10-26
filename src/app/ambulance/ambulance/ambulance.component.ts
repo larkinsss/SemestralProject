@@ -1,4 +1,6 @@
+import { WaitingListService } from './../../services/waiting-list.service';
 import { Component, OnInit } from '@angular/core';
+import { WaitingListEntry } from 'src/app/model/waiting-list-entry';
 
 @Component({
   selector: 'app-ambulance',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AmbulanceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: WaitingListService) { }
 
   ngOnInit(): void {
   }
+
+  
 
 }

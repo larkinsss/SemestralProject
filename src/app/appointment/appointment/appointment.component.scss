@@ -25,6 +25,12 @@
     outline-color: coral;
 }
 
+.button {
+    display: flex;
+   justify-content: center;
+   margin-bottom: 1rem;
+}
+
 @media (min-width: 620px) {
     .container {
       column-count: 1;
@@ -37,7 +43,7 @@
 
     .input-area {
         width: 75%;
-    } 
+    }    
 }
   
 *, *:before, *:after {
@@ -47,3 +53,22 @@
 .input-area {
     width: 100%;
 } 
+
+/* input color class */
+::ng-deep input.mat-input-element {
+    color: coral;
+}
+  
+  /* Change label color on focused */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: coral !important;
+}
+  
+  /* underline border color on focused */
+::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color: coral !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: coral!important;
+}
