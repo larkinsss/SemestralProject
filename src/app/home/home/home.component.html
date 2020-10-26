@@ -55,7 +55,37 @@
       </div>
     </ng-template>
   </ngb-carousel>
-    
+  
+  <div class="row">
+    <div class="text col-md-7">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Zákrok</th>
+          <th scope="col">Indikačné obmedzenie</th>
+          <th scope="col">Cena</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let entry of listOfProcedures; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>
+            {{ entry.name }}
+          </td>
+          <td>{{ entry.restriction}}</td>
+          <td>{{ entry.cost | number }}€</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-5">
+      <img src="assets/docPac.jpg" alt="Doctor and patients">
+    </div>
+  </div>
+
+
   
   <div class="text" style="margin-top: 1rem;">
     <p class="mb-0">Practitioner of the healing arts, equally skilled in fighting disease and illness. Legible handwriting is their enemy.</p>
