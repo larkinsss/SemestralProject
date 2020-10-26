@@ -1,8 +1,12 @@
-export class WaitingListEntry{
-    first_name: string;
-    last_name: string;
-    date_of_birth: Date;
-    phone_number: string;
+import { Time } from '@angular/common';
+import { Timestamp } from 'rxjs';
+
+export interface WaitingListEntry{
+    firstName: string;
+    lastName: string;
+    dateOfBirth: Date;
+    phoneNumber: string;
     email: string;
-    desc_illness: string;
+    descIllness: string;
+    timeOfArrival: Date;
 }

@@ -1,8 +1,4 @@
 <ng-container *ngFor="let entry of waitingList">
-        <!-- <app-waiting-entry [data]="entry" (delete)="onDelete($event)"> -->
-        <!-- </app-waiting-entry> -->
+        <app-waiting-list-entry [data]="entry" (delete)="onDelete($event)">
+        </app-waiting-list-entry>
 </ng-container>
-
-<a mat-fab [routerLink]="['/waiting-list', 'new']" class="add-new">
-    <mat-icon>add</mat-icon>
-</a>
