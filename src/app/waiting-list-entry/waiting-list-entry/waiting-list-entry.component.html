@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8"/>
+    <title>A document with a short head</title>
+  </head>
+
 <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -12,7 +19,7 @@
       <mat-label>Dátum narodenia</mat-label>
       <input
         matInput
-        [value]="data.dateOfBirth | date: 'longDate'"
+        value="data.dateOfBirth | date: 'longDate'"
         readonly
       />
     </mat-form-field> 
@@ -20,7 +27,7 @@
       <mat-label>Dôvod návštevy</mat-label>
       <input
         matInput
-        [value]="data.descIllness"
+        value="data.descIllness"
         readonly
       />
     </mat-form-field>
@@ -28,7 +35,7 @@
       <mat-label>Telefónne číslo</mat-label>
       <input
         matInput
-        [value]="data.phoneNumber"
+        value="data.phoneNumber"
         readonly
       />
     </mat-form-field>
