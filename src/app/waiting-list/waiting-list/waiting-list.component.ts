@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { WaitingListEntry } from 'src/app/model/waiting-list-entry';
 
 @Component({
@@ -7,7 +8,7 @@ import { WaitingListEntry } from 'src/app/model/waiting-list-entry';
   styleUrls: ['./waiting-list.component.scss']
 })
 export class WaitingListComponent implements OnInit {
-  public waitingList: WaitingListEntry[]
+  public waitingList: Array<WaitingListEntry>;
 
   constructor() { }
 
@@ -29,7 +30,8 @@ export class WaitingListComponent implements OnInit {
     this.waitingList.push(entry2);
   }
 
-  
+  onDelete(data: WaitingListEntry): void {
+  }
 
 
 }
