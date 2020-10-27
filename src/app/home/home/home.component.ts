@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
       cost: 5.0
     },
     {
-      name: 'Preventívna stomatologická prehlaidka',
+      name: 'Preventívna stomatologická prehliadka',
       restriction: 'maximálny vek: 18 rokov',
       cost: 18.80
     }
